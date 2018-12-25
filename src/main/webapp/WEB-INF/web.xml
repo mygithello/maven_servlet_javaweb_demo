@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+  <display-name>Archetype Created Web Application</display-name>
+
+  <servlet>
+    <servlet-name>ExportExlServlet</servlet-name>
+    <servlet-class>com.demo.test.servlet.exportexcel.ExportExlServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ExportExlServlet</servlet-name>
+    <url-pattern>/ExportExlServlet</url-pattern>
+  </servlet-mapping>
+
+
+  <!--验证码servlet -->
+  <servlet>
+    <servlet-name>VerificationServlet</servlet-name>
+    <servlet-class>com.demo.test.servlet.verificationcode.VerificationServlet</servlet-class>
+  </servlet>
+  <!-- 登录servlet -->
+  <servlet>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>com.demo.test.servlet.verificationcode.LoginServlet</servlet-class>
+  </servlet>
+
+  <!-- servletMapping -->
+  <servlet-mapping>
+    <servlet-name>VerificationServlet</servlet-name>
+    <url-pattern>/verificationCodeServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
+</web-app>
